@@ -120,7 +120,7 @@ export default function ExpandableCardDemo() {
                     layoutId={`card-${card.title}-${id}`}
                     key={`card-${card.title}-${id}`}
                     onClick={() => setActive(card)}
-                    className="p-4 flex flex-col md:flex-row mt-6 bg-black justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
+                    className="px-4 py-8 flex flex-col md:flex-row my-8  bg-black justify-between items-center hover:bg-yellow-500 dark:hover:bg-neutral-800 rounded-xl cursor-pointer">
                     <div className="flex gap-4 flex-col md:flex-row ">
                         <motion.div layoutId={`image-${card.title}-${id}`}>
                             <Image
@@ -133,12 +133,12 @@ export default function ExpandableCardDemo() {
                         <div className="">
                             <motion.h3
                                 layoutId={`title-${card.title}-${id}`}
-                                className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left">
+                                className="font-medium text-white dark:text-neutral-200 text-center md:text-left">
                                 {card.title}
                             </motion.h3>
                             <motion.p
                                 layoutId={`description-${card.description}-${id}`}
-                                className="text-neutral-600 dark:text-neutral-400 text-center md:text-left">
+                                className="text-white dark:text-neutral-400 text-center md:text-left">
                                 {card.description}
                             </motion.p>
                         </div>
@@ -191,7 +191,7 @@ const cards = [
         description: "Lana Del Rey",
         title: "Summertime Sadness",
         src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-        ctaText: "Play",
+        ctaText: "Read More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
@@ -213,7 +213,7 @@ const cards = [
         description: "Babbu Maan",
         title: "Mitran Di Chhatri",
         src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-        ctaText: "Play",
+        ctaText: "Read More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
@@ -235,7 +235,7 @@ const cards = [
         description: "Metallica",
         title: "For Whom The Bell Tolls",
         src: "https://assets.aceternity.com/demos/metallica.jpeg",
-        ctaText: "Play",
+        ctaText: "Read More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
@@ -256,7 +256,7 @@ const cards = [
         description: "Led Zeppelin",
         title: "Stairway To Heaven",
         src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-        ctaText: "Play",
+        ctaText: "Read More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
@@ -276,7 +276,7 @@ const cards = [
         description: "Mustafa Zahid",
         title: "Toh Phir Aao",
         src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-        ctaText: "Play",
+        ctaText: "Read More",
         ctaLink: "https://ui.aceternity.com/templates",
         content: () => {
             return (
