@@ -53,16 +53,14 @@ const Hero = () => {
         <div className="overflow-hidden">
             {/* Hero Section */}
             <div
-                ref={heroRef}
+
                 className="bg-[#FFC53D] space-x-28 px-[40vh] py-[20vh] flex flex-row justify-start items-center shadow-lg rounded-lg"
             >
                 <Image src={typing} alt="icon" width={600} height={600} />
-                <div ref={textRef} className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4">
                     <h1 className="text-9xl font-serif">Post Your Notes</h1>
                     <Link href='/notes'><button
-                        ref={buttonRef}
-                        onMouseEnter={handleHover}
-                        onMouseLeave={handleHoverExit}
+
                         className="bg-black text-white px-6 py-3 rounded-md text-xl font-semibold transition-all"
                     >
                         Get Started

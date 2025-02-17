@@ -6,7 +6,7 @@ import Form from '../components/Form'
 
 const Notes = () => {
     return (
-        <div className='bg-[#FFC53D]'>
+        <div className='bg-[#FFC53D] overflow-hidden'>
             <Form />
             <ExpandableCardDemo />
 

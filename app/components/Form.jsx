@@ -12,7 +12,7 @@ export default function Form() {
     const onSubmit = (data) => console.log(data);
 
     return (
-        <div className="flex flex-col items-center my-[10vh] px-[40vh] py-[10vh] bg-black text-white rounded-xl">
+        <div className="flex flex-col items-center my-[10vh] mx-[15vh] px-[20vh] py-[10vh] bg-black text-white rounded-xl">
             <h2 className="text-xl font-semibold mb-6">Post a note!</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md space-y-4">
                 {/* Name Input */}
