@@ -2,10 +2,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+app.post('/notes', (req, res) => {
+    res.send('Login successful');
 });
-
 app.listen(5000, () => {
     console.log('Example app listening on port port!');
 });
